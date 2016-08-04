@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Money</string>
+    <string name="app_name1">EditXY</string>
+    <string name="des">辅助工具设置步骤：\n\n,1、请在微信的设置-〉新消息提醒，\n将 “接收新消息通知” 和 “通知显示消息详情” 这两个开关打开。\n\n2、请不要锁定屏幕，这样有新红包时能重新打开微信界面。</string>
+
+
+    <string name="keyString">[微信红包]</string>
+    <string name="open">com.tencent.mm.plugin.luckymoney.ui.LuckyMoneyReceiveUI</string>
+    <string name="close">com.tencent.mm.plugin.luckymoney.ui.LuckyMoneyDetailUI</string>
+    <string name="chat">com.tencent.mm.ui.LauncherUI</string>
+    
+    <string name="id">com.tencent.mm:id/</string>
+    <string name="lhb">领取红包</string>
+
+</resources>
