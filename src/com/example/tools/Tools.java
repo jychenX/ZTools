@@ -38,7 +38,7 @@ public class Tools {
 		} catch (NameNotFoundException e) {
 			e.printStackTrace();
 		}
-		if(!(code.equals("6.3.13") ||code.equals("6.3.16") ||code.equals("6.3.18") || code.equals("6.3.22"))){
+		if(!(code.equals("6.3.13") ||code.equals("6.3.16") ||code.equals("6.3.18") || code.equals("6.3.22")|| code.equals("6.3.23"))){
 			code="";
 		}
 		return code;
@@ -81,6 +81,13 @@ public class Tools {
 			noMoney="b_f";
 			closeChat="ei";
 			moneyText="b7v";
+		}else if(code.equals("6.3.23")){
+			chatOpen = "a13";
+			open="ba_";
+			close="fa";
+			noMoney="bad";
+			closeChat="ew";
+			moneyText="b8t";
 		}
 		
 		all[0] = chatOpen;
@@ -89,7 +96,6 @@ public class Tools {
 		all[3] = noMoney;
 		all[4] = closeChat;
 		all[5] = moneyText;
-//		System.out.println("串接："+all[array]);
 		return all[array];
 	}	
 }

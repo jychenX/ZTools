@@ -32,7 +32,6 @@ public class ZService extends AccessibilityService {
     public Tools tool;
     
     public void onAccessibilityEvent(AccessibilityEvent accessibilityEvent) {
-    	Log.e(tag, "执行红包");
     	tool = new Tools(getBaseContext());
         AccessibilityNodeInfo msgs = getRootInActiveWindow();
         if (msgs == null || tool.getCode().equals("")) {
@@ -65,7 +64,6 @@ public class ZService extends AccessibilityService {
         case AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED:
         	
         	String className = accessibilityEvent.getClassName().toString();
-        	Log.e(tag, "改变");
      	    if (className.equals(this.getResources().getString(R.string.open))) {
      		    openPacket();
      	    }else if(className.equals(this.getResources().getString(R.string.close))){
@@ -78,7 +76,6 @@ public class ZService extends AccessibilityService {
      	    
         break;
         case AccessibilityEvent.TYPE_VIEW_SCROLLED:
-        	Log.e(tag, "滚动");
         	String className1 = accessibilityEvent.getClassName().toString();
      	    if (className1.equals(this.getResources().getString(R.string.open))) {
      		    openPacket();
@@ -148,7 +145,6 @@ public class ZService extends AccessibilityService {
          				n.performAction(AccessibilityNodeInfo.ACTION_CLICK);
          				adsId = nodeInfo.findAccessibilityNodeInfosByViewId(this.getResources().getString(R.string.id)+tool.wechatVersion(5));
          	    		for (AccessibilityNodeInfo money : adsId) {
-         	    			Log.e(tag, "money值：---  "+money.getText());
          	    			Toast.makeText(getBaseContext(), "抢到："+money.getText()+"元", Toast.LENGTH_LONG).show();
          	    			float moneyF = Float.parseFloat(money.getText().toString());
          	    			@SuppressWarnings("unused")
