@@ -7,7 +7,7 @@ import android.content.pm.PackageManager.NameNotFoundException;
 
 public class Tools {
 
-	//Test the change in github, git pull
+	//Test the change in github
 	public Context context;
 	public Tools(Context context){
 		this.context = context;
