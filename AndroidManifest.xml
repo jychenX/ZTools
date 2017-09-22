@@ -13,7 +13,7 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
-        
+        <!--测试-->
         <service
             android:name=".ZService"
             android:label="@string/app_name"
